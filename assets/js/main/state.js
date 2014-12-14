@@ -16,6 +16,11 @@ app.config(['$stateProvider', function($stateProvider) {
       url: '/contact',
       templateUrl: 'js/main/templates/contact.tpl.html',
       controller: 'ContactCtrl'
+    })
+    .state('app.signup', {
+      url: '/signup',
+      templateUrl: 'js/main/templates/signup.tpl.html',
+      controller: 'SignupCtrl'
     });
 
 }]);
