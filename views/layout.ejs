@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="app" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="app" class="no-js"> <!--<![endif]-->
   <head>
     <title>New Sails App</title>
-
-    <!-- Viewport mobile tag for sensible mobile support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    
-    <!--  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
         Stylesheets and Preprocessors
         ==============================
 
         You can always bring in CSS files manually with `<link>` tags, or asynchronously
-        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage 
+        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage
         of Sails' conventional asset pipeline (boilerplate Gruntfile).
 
         By default, stylesheets from your `assets/styles` folder are included
@@ -27,14 +30,27 @@
             + Import stylesheets from other directories
             + Use a different or additional preprocessor, like SASS, SCSS or Stylus
     -->
-
     <!--STYLES-->
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/bootstrap/less/bootstrap.css">
+    <link rel="stylesheet" href="/styles/app.css">
+    <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
+    
+    <script src="/js/dependencies/modernizr-2.6.2.min.js"></script>
   </head>
 
   <body>
     <%- body %>
 
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div ui-view="navbar"></div>
+
+    <div class="main" ui-view="main"></div>
 
 
     <!--
@@ -59,6 +75,7 @@
     -->
 
     <!--TEMPLATES-->
+    
     <!--TEMPLATES END-->
 
 
@@ -68,7 +85,7 @@
       ========================
 
       You can always bring in JS files manually with `script` tags, or asynchronously
-      on the client using a solution like AMD (RequireJS).  Or, if you like, you can 
+      on the client using a solution like AMD (RequireJS).  Or, if you like, you can
       take advantage of Sails' conventional asset pipeline (boilerplate Gruntfile).
 
       By default, files in your `assets/js` folder are included here
@@ -86,6 +103,20 @@
     -->
 
     <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/dependencies/angular.js"></script>
+    <script src="/js/dependencies/angular-ui-router.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/core/services/VersionService.js"></script>
+    <script src="/js/core/filters/VersionFilter.js"></script>
+    <script src="/js/core/directives/VersionDirective.js"></script>
+    <script src="/js/core/state.js"></script>
+    <script src="/js/core/controllers/AppCtrl.js"></script>
+    <script src="/js/core/controllers/NavbarCtrl.js"></script>
+    <script src="/js/main/state.js"></script>
+    <script src="/js/main/controllers/HomeCtrl.js"></script>
+    <script src="/js/main/controllers/AboutCtrl.js"></script>
+    <script src="/js/main/controllers/ContactCtrl.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>
