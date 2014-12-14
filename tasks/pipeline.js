@@ -15,6 +15,10 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
+  'styles/normalize.css',
+  'styles/main.css',
+  'styles/bootstrap/less/bootstrap.css',
+  // 'css/app.css',
   'styles/**/*.css'
 ];
 
@@ -22,16 +26,28 @@ var cssFilesToInject = [
 // Client-side javascript files to inject in order
 // (uses Grunt-style wildcard/glob/splat expressions)
 var jsFilesToInject = [
-  
   // Load sails.io before everything else
   'js/dependencies/sails.io.js',
-
   // Dependencies like jQuery, or Angular are brought in here
-  'js/dependencies/**/*.js',
-
-  // All of the rest of your client-side js files
-  // will be injected here in no particular order.
-  'js/**/*.js'
+  'js/dependencies/angular.js',
+  'js/dependencies/angular-cookies.js',
+  'js/dependencies/angular-ui-router.js',
+  'js/dependencies/routingConfig.js',
+  // 'js/dependencies/**/*.js',
+  'js/app.js',
+  //CORE
+  'js/core/services/VersionService.js',
+  'js/core/filters/VersionFilter.js',
+  'js/core/directives/VersionDirective.js',
+  'js/core/state.js',
+  'js/core/controllers/AppCtrl.js',
+  'js/core/controllers/NavbarCtrl.js',
+  // 'js/core/controllers/NavbarCtrl.js',
+  //MAIN
+  'js/main/state.js',
+  'js/main/controllers/HomeCtrl.js',
+  'js/main/controllers/AboutCtrl.js',
+  'js/main/controllers/ContactCtrl.js'
 ];
 
 

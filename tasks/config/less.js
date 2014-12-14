@@ -20,6 +20,13 @@ module.exports = function(grunt) {
 				src: ['importer.less'],
 				dest: '.tmp/public/styles/',
 				ext: '.css'
+			},{
+			  // add bootstrap less
+			  expand: true,
+			  cwd: './bower_components',
+			  src: ['bootstrap/less/bootstrap.less'],
+			  dest: '.tmp/public/styles/',
+			  ext: '.css'
 			}]
 		}
 	});
