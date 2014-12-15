@@ -34,16 +34,6 @@ module.exports = function(grunt) {
           ],
         flatten: true,
         dest: '.tmp/public/js/dependencies'
-      },{
-        // adding html5-boilerplate css from bower componenets
-        expand: true,
-        cwd: './bower_components',
-        src: [
-          'html5-boilerplate/css/normalize.css',
-          'html5-boilerplate/css/main.css'
-          ],
-        flatten: true,
-        dest: '.tmp/public/styles'
       }]
     },
     build: {
