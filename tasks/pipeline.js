@@ -34,20 +34,23 @@ var jsFilesToInject = [
   'js/dependencies/angular-ui-router.js',
   'js/dependencies/routingConfig.js',
   // 'js/dependencies/**/*.js',
-  'js/app.js',
-  //CORE
-  'js/core/services/VersionService.js',
-  'js/core/filters/VersionFilter.js',
-  'js/core/directives/VersionDirective.js',
-  'js/core/state.js',
-  'js/core/controllers/AppCtrl.js',
-  'js/core/controllers/NavbarCtrl.js',
-  // 'js/core/controllers/NavbarCtrl.js',
-  //MAIN
-  'js/main/state.js',
-  'js/main/controllers/HomeCtrl.js',
-  'js/main/controllers/AboutCtrl.js',
-  'js/main/controllers/ContactCtrl.js'
+  'app/js/app.js',
+  'app/core/services/VersionService.js',
+  'app/js/core/filters/VersionFilter.js',
+  'app/js/core/directives/VersionDirective.js',
+
+
+//Core
+  'app/js/core/state.js',
+  'app/js/core/controllers/AppCtrl.js',
+  'app/js/core/controllers/NavbarCtrl.js',
+
+  // MAIN
+  'app/js/main/state.js',
+  'app/js/main/controllers/HomeCtrl.js',
+  'app/js/main/controllers/AboutCtrl.js',
+  'app/js/main/controllers/ContactCtrl.js',
+  
 ];
 
 
