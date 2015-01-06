@@ -6,10 +6,11 @@
   <head>
     <title>New Sails App</title>
     <meta charset="utf-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My AngularJS App</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--
         Stylesheets and Preprocessors
         ==============================
@@ -32,8 +33,7 @@
     -->
     <!--STYLES-->
     <link rel="stylesheet" href="/styles/bootstrap/less/bootstrap.css">
-    <link rel="stylesheet" href="/styles/app.css">
-    <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/app/css/app.css">
     <!--STYLES END-->
     
     <script src="/js/dependencies/modernizr-2.6.2.min.js"></script>
@@ -47,9 +47,8 @@
     <![endif]-->
 
 
-  <div ui-view="navbar"></div>
 
-  <div class="main" ui-view="main"></div>
+  <div ui-view="main"></div>
 
     <!--
         Client-side Templates
@@ -114,6 +113,8 @@
     <script src="/app/js/main/controllers/HomeCtrl.js"></script>
     <script src="/app/js/main/controllers/AboutCtrl.js"></script>
     <script src="/app/js/main/controllers/ContactCtrl.js"></script>
+    <script src="/app/js/public/state.js"></script>
+    <script src="/app/js/public/controllers/LoginCtrl.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>

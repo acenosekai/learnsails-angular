@@ -18,8 +18,9 @@ var cssFilesToInject = [
   'styles/normalize.css',
   'styles/main.css',
   'styles/bootstrap/less/bootstrap.css',
+  'app/css/app.css',
   // 'css/app.css',
-  'styles/**/*.css'
+  //'styles/**/*.css'
 ];
 
 
@@ -40,7 +41,7 @@ var jsFilesToInject = [
   'app/js/core/directives/VersionDirective.js',
 
 
-//Core
+ //Core
   'app/js/core/state.js',
   'app/js/core/controllers/AppCtrl.js',
   'app/js/core/controllers/NavbarCtrl.js',
@@ -50,7 +51,10 @@ var jsFilesToInject = [
   'app/js/main/controllers/HomeCtrl.js',
   'app/js/main/controllers/AboutCtrl.js',
   'app/js/main/controllers/ContactCtrl.js',
-  
+    // PUBLIC
+'app/js/public/state.js',
+  'app/js/public/controllers/LoginCtrl.js',
+
 ];
 
 
@@ -72,12 +76,12 @@ var templateFilesToInject = [
 // Prefix relative paths to source files so they point to the proper locations
 // (i.e. where the other Grunt tasks spit them out, or in some cases, where
 // they reside in the first place)
-module.exports.cssFilesToInject = cssFilesToInject.map(function(path) {
-  return '.tmp/public/' + path;
+module.exports.cssFilesToInject = cssFilesToInject.map(function (path) {
+    return '.tmp/public/' + path;
 });
-module.exports.jsFilesToInject = jsFilesToInject.map(function(path) {
-  return '.tmp/public/' + path;
+module.exports.jsFilesToInject = jsFilesToInject.map(function (path) {
+    return '.tmp/public/' + path;
 });
-module.exports.templateFilesToInject = templateFilesToInject.map(function(path) {
-  return 'assets/' + path;
+module.exports.templateFilesToInject = templateFilesToInject.map(function (path) {
+    return 'assets/' + path;
 });

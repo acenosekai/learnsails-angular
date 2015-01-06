@@ -34,6 +34,15 @@ module.exports = function(grunt) {
           ],
         flatten: true,
         dest: '.tmp/public/js/dependencies'
+      },{
+        // adding useful js from bower componenets
+        expand: true,
+        cwd: './bower_components',
+        src: [
+          'bootstrap/fonts/*',
+          ],
+        flatten: true,
+        dest: '.tmp/public/styles/bootstrap/fonts'
       }]
     },
     build: {
