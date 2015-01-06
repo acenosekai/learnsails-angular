@@ -36,7 +36,9 @@ var jsFilesToInject = [
   'js/dependencies/routingConfig.js',
   // 'js/dependencies/**/*.js',
   'app/js/app.js',
-  'app/core/services/VersionService.js',
+    
+  'app/js/core/services/AuthService.js',
+  'app/js/core/services/VersionService.js',
   'app/js/core/filters/VersionFilter.js',
   'app/js/core/directives/VersionDirective.js',
 
