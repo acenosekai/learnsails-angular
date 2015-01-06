@@ -5,7 +5,7 @@ app.config(['$stateProvider',
         $stateProvider
             .state('app.login', {
                 url: '/login',
-                templateUrl: 'app/js/main/templates/login.tpl.html',
+                templateUrl: 'app/js/public/templates/login.tpl.html',
                 controller: 'LoginCtrl'
             });
 
