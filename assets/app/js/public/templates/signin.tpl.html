@@ -19,7 +19,8 @@
                                     <input name="remember" ng-model="login.remember" type="checkbox" value="Remember Me">Remember Me</label>
                             </div>
                             <!-- Change this to a button or input when using this as a form -->
-                            <a href="javascript:;" ng-click="doLogin(login)" class="btn btn-sm btn-success">Login</a>
+                            <a ng-click="doLogin(login)" class="btn btn-sm btn-success">Sign In</a>
+                            <a ui-sref="app.signup" class="btn btn-sm btn-primary">Sign Up</a>
                         </fieldset>
                     </form>
                 </div>

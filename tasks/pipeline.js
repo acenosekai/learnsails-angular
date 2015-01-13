@@ -36,7 +36,7 @@ var jsFilesToInject = [
   'js/dependencies/routingConfig.js',
   // 'js/dependencies/**/*.js',
   'app/js/app.js',
-    
+
   'app/js/core/services/AuthService.js',
   'app/js/core/services/VersionService.js',
   'app/js/core/filters/VersionFilter.js',
@@ -54,8 +54,9 @@ var jsFilesToInject = [
   'app/js/main/controllers/AboutCtrl.js',
   'app/js/main/controllers/ContactCtrl.js',
     // PUBLIC
-'app/js/public/state.js',
-  'app/js/public/controllers/LoginCtrl.js',
+  'app/js/public/state.js',
+  'app/js/public/controllers/SigninCtrl.js',
+  'app/js/public/controllers/SignupCtrl.js',
 
 ];
 

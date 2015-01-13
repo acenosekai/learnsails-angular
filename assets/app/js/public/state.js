@@ -4,9 +4,13 @@ app.config(['$stateProvider',
 
         $stateProvider
             .state('app.login', {
-                url: '/login',
-                templateUrl: 'app/js/public/templates/login.tpl.html',
-                controller: 'LoginCtrl'
+                url: '/signin',
+                templateUrl: 'app/js/public/templates/signin.tpl.html',
+                controller: 'SigninCtrl'
+            }).state('app.signup', {
+                url: '/signup',
+                templateUrl: 'app/js/public/templates/signup.tpl.html',
+                controller: 'SignupCtrl'
             });
 
 }]);

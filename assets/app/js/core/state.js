@@ -1,8 +1,8 @@
 // Application Level State
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.when('', '/login');
-    $urlRouterProvider.when('/', '/login');
+  $urlRouterProvider.when('', '/signin');
+    $urlRouterProvider.when('/', '/signin');
 
 
   $stateProvider
